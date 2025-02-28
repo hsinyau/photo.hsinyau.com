@@ -72,7 +72,7 @@ export default function Photo({ matches, image, previous, next }: ImageProps) {
             backgroundImage: `url(${imageLink(image, 1280)})`,
           }}
         />
-      </span>,
+      </span>
       <OpenButton id={id} href={slug} />
       <CloseButton />
       <PaginationButton

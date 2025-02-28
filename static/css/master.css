@@ -41,20 +41,6 @@ main {
   align-content: flex-start;
 }
 
-.grid:after {
-  content: "";
-  display: block;
-  flex-grow: 10;
-  outline: 2px solid #fff;
-  position: relative;
-}
-
-@media (prefers-color-scheme: dark) {
-  .grid:after {
-    outline-color: #000;
-  }
-}
-
 .grid .photodetail-links {
   display: none;
 }
