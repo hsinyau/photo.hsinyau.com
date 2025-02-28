@@ -3,7 +3,7 @@
 import { parse } from "$std/dotenv/mod.ts";
 import { join } from "$std/path/join.ts";
 
-if (!("Deno" in window)) {
+if (!("Deno" in globalThis)) {
   throw new Error("This code should only be seen in the browser");
 }
 
