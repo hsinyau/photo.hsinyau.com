@@ -17,7 +17,11 @@ export interface ImageProps {
   matches?: boolean;
 }
 
-const colorHash = new ColorHash();
+const colorHash = new ColorHash({
+  lightness: [0.85, 0.95],    // 提高亮度范围（原默认值 [0.35, 0.65]）
+  saturation: [0.2, 0.4],     // 降低饱和度范围（原默认值 [0.35, 1]）
+  hue: { min: 0, max: 360 }   // 保持全色相范围
+});
 
 export default function Photo({ matches, image, previous, next }: ImageProps) {
   // check slug
